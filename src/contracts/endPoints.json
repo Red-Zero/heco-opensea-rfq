@@ -1,0 +1,40 @@
+{
+    "rpcEndpoints": {
+      "ethereum":"https://eth-node.hq.dodoex.co",
+      "polygon": "https://polygon-mainnet.g.alchemy.com/v2/A-n8TMuZQi9DnFp4x3K57QCvoiOWDF4k",
+      "arbitrum": "https://arb1.arbitrum.io/rpc",
+      "bsc": "https://bsc-dataseed1.ninicoin.io",
+      "heco": "https://http-mainnet-node.huobichain.com",
+      "kovan": "https://kovan.infura.io/v3/d4470e7b7221494caaaa66d3a353c5dc",
+      "rinkeby": "https://rinkeby.infura.io/v3/17e1665e3b834b979413ccdb5e6fb267",
+      "okchain":"https://exchainrpc.okex.org",
+      "aurora": "https://mainnet.aurora.dev/Fon6fPMs5rCdJc4mxX4kiSK1vsKdzc3D8k6UF8aruek",
+      "boba":"https://mainnet.boba.network",
+      "moonriver":"https://rpc.moonriver.moonbeam.network",
+      "avax":"https://api.avax.network/ext/bc/C/rpc'"
+    },
+    "graphEndpoints": {
+      "dodoex": {
+        "ethereum": "https://api.thegraph.com/subgraphs/name/dodoex/dodoex-v2",
+        "bsc": "https://n20.hg.network/subgraphs/name/dodoex-v2-bsc/bsc",
+        "polygon": "https://api.thegraph.com/subgraphs/name/dodoex/dodoex-v2-polygon",
+        "heco": "https://n10.hg.network/subgraphs/name/dodoex-v2-heco-hg/heco",
+        "arbitrum":"https://api.thegraph.com/subgraphs/name/dodoex/dodoex-v2-arbitrum",
+        "okchain": "https://graph.kkt.one/subgraphs/name/dodoex/dodoex-v2-okchain",
+        "rinkeby":"https://api.thegraph.com/subgraphs/name/dodoex/dodoex-v2-rinkeby",
+        "kovan": "https://api.thegraph.com/subgraphs/name/dodoex/dodoex-v2-kovan"
+      },
+      "vdodo": {
+        "ethereum": "https://api.thegraph.com/subgraphs/name/dodoex/dodoex-vdodo",
+        "rinkeby":"https://api.thegraph.com/subgraphs/name/dodoex/dodoex-vdodo-rinkeby",
+        "kovan": "https://api.thegraph.com/subgraphs/name/dodoex/vdodo-kovan"
+      },
+      "price": "https://service.dodoex.io/api/v1/price/current/batch"
+    },
+    "vDODOAddresses": {
+      "ethereum": "0xc4436fBAE6eBa5d95bf7d53Ae515F8A707Bd402A",
+      "rinkeby": "0x8751f874ecd2874f2a5ced95a08364c203e4146a",
+      "kovan": "0xf7119bf8be41dd9080bd0a9ab04788b5eca140d5"
+    }
+  }
+  

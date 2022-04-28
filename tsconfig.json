@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": false,
+    "typeRoots": [
+      "./typings",
+      "./node_modules/@types"
+    ],
+
+    "paths":{
+      "@controllers/*":["src/controllers/*"],
+      "@services/*":["src/services/*"],
+      "@modules/*":["src/modules/*"],
+      "@lib/*":["src/lib/*"],
+      "@utils/*":["src/utils/*"],
+      "@middleware/*":["src/middleware/*"],
+      "@entity/*":["src/entity/*"],
+      "@constants/*":["src/constants/*"],
+      "@config/*":["src/config/*"],
+      "@cache/*":["src/cache/*"],
+      "@contracts/*":["src/contracts/*"],
+      "@task/*":["src/task/*"]
+    }
+  }
+}
