@@ -1,5 +1,5 @@
-import { BadRequestException } from "@nestjs/common";
-import * as Validate from "request-validate";
+import { BadRequestException } from '@nestjs/common';
+import * as Validate from 'request-validate';
 
 /**
  * 
@@ -15,7 +15,7 @@ import * as Validate from "request-validate";
 * @param message  返回消息       
  * @returns 
  */
-import { createParamDecorator, ExecutionContext } from "@nestjs/common";
+import { createParamDecorator, ExecutionContext } from '@nestjs/common';
 
 export const BodyValidation = createParamDecorator(
   (validationInfo: any, ctx: ExecutionContext) => {
@@ -24,17 +24,13 @@ export const BodyValidation = createParamDecorator(
       : "Validation failed'";
     const request = ctx.switchToHttp().getRequest();
     try {
-      Validate(
-        request.body[validationInfo.name],
-        validationInfo.rules,
-        message
-      );
+      Validate(request.body, validationInfo.rules, message);
     } catch (err) {
       console.log(err.message);
       throw new BadRequestException(message);
     }
     return request.body;
-  }
+  },
 );
 
 export const QueryValidation = createParamDecorator(
@@ -50,5 +46,5 @@ export const QueryValidation = createParamDecorator(
       throw new BadRequestException(message);
     }
     return request.query;
-  }
+  },
 );

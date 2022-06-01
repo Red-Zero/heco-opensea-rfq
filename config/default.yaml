@@ -16,3 +16,6 @@
         port: 6379
         password: 
         db: 1
+  network:  rinkeby
+  host: 
+      opensea: https://testnets-api.opensea.io/api/v1/

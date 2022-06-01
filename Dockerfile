@@ -1,4 +1,4 @@
-FROM node:14.17.6
+FROM node:16.15.0
 ##Create app directory  
 RUN mkdir -p /home/app
 RUN npm i -g @nestjs/cli

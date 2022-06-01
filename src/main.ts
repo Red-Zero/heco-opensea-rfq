@@ -1,16 +1,16 @@
-import { NestFactory } from "@nestjs/core";
-import { AppModule } from "./modules/app.module";
-import { TransformInterceptor } from "./middleware/globalLog.middleware";
-import "reflect-metadata";
-import { createConnections } from "typeorm";
+import { NestFactory } from '@nestjs/core';
+import { AppModule } from './modules/app.module';
+import { TransformInterceptor } from './middleware/globalLog.middleware';
+import 'reflect-metadata';
+import { createConnections } from 'typeorm';
 
-import { getConfig } from "./config/index";
-import { HttpExceptionFilter } from "@lib/ExceptionFilter";
+import { getConfig } from './config/index';
+import { HttpExceptionFilter } from '@lib/ExceptionFilter';
 
 async function bootstrap() {
   //typeorm初始化
-  await createConnections(getConfig("db"));
-  console.log("ORM 链接成功");
+  await createConnections(getConfig('db'));
+  console.log('ORM 链接成功');
 
   //nest初始化
   const app = await NestFactory.create(AppModule);

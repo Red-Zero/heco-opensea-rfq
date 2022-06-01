@@ -1,4 +1,4 @@
 enum ConnectionNames {
-  opensea = "db_opensea",
+  OPENSEA = "db_opensea",
 }
 export default ConnectionNames;

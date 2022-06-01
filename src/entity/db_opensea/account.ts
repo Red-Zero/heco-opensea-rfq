@@ -16,4 +16,16 @@ export class Accounts {
 
   @Column()
   updated_at: Date;
+
+  toSimpleAccount() {
+    const account = new simpleAccount();
+    account.address = this.address;
+    account.private_key = this.private_key;
+    return account;
+  }
+}
+
+export class simpleAccount {
+  address: string;
+  private_key: string;
 }

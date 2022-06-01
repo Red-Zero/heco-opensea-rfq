@@ -5,10 +5,17 @@ export class ErrorCode {
     PARAM_ERROE: 1002,
   };
   static getResul(code = this.ERROR_CODE.SUCESS, msg = "sucess", data = null) {
-    return {
-      code,
-      msg,
-      data,
-    };
+    return new HttpResponse(code, msg, data);
+  }
+}
+
+export class HttpResponse {
+  code: number;
+  msg: string;
+  data;
+  constructor(code, msg, data) {
+    this.code = code;
+    this.msg = msg;
+    this.data = data;
   }
 }
